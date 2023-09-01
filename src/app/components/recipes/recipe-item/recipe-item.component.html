@@ -1,0 +1,19 @@
+<li (click)="onRecipeItemClick()">
+  <div class="row">
+    <div class="col-xs-12">
+      <a href="#" class="list-group-item clearfix">
+        <div class="pull-left">
+          <h4 class="list-group-item-heading">
+            {{ name }}
+          </h4>
+          <p class="list-group-item-text">
+            {{ description }}
+          </p>
+        </div>
+        <span class="pull-right">
+          <img [src]="imagePath" [alt]="name" style="max-height: 50px;" class="img-responsive">
+        </span>
+      </a>
+    </div>
+  </div>
+</li>

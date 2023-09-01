@@ -1,10 +1,9 @@
-<app-header />
+<app-header
+  (selectedTab)="onTabChange($event)"
+/>
 <app-main>
-  <app-container>
-    <app-recipe-list />
-    <app-recipe-details />
-  </app-container>
+  <app-recipes *ngIf="currentTab === 'recipes'"></app-recipes>
 
-  <app-shopping-list />
+  <app-shopping-list *ngIf="currentTab === 'shoppingList'" />
 </app-main>
 <app-footer />

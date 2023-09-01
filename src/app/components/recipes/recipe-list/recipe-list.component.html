@@ -1,0 +1,20 @@
+<div class="col-md-5">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success">
+        Create new recipe
+      </button>
+    </div>
+  </div>
+  <hr>
+  <h3>Recipe list</h3>
+  <ul>
+    <app-recipe-item
+      *ngFor="let recipe of recipes; let i = index;"
+      [name]="recipe.name"
+      [description]="recipe.description"
+      [img]="recipe.imagePath"
+      [index]="i"
+    ></app-recipe-item>
+  </ul>
+</div>
