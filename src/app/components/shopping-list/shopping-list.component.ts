@@ -19,4 +19,8 @@ export class ShoppingListComponent {
     new Ingredient('Garlic', 1),
     new Ingredient('Broccoli', 1),
   ];
+
+  onAddIngredient(ingredient: Ingredient) {
+    this.ingredients.unshift(new Ingredient(ingredient.name, ingredient.amount));
+  }
 }

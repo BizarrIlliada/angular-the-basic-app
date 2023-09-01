@@ -14,7 +14,7 @@
       [name]="recipe.name"
       [description]="recipe.description"
       [img]="recipe.imagePath"
-      [index]="i"
+      (click)="setCurrentRecipe(i)"
     ></app-recipe-item>
   </ul>
 </div>
