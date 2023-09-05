@@ -1,7 +1,5 @@
 <app-container>
-  <app-recipe-list
-    (currentRecipe)="setCurrentRecipe($event)"
-  />
+  <app-recipe-list/>
   <app-recipe-details
     *ngIf="currentRecipe; else messageText"
     [name]="currentRecipe.name"
