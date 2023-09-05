@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { RecipesService } from 'src/app/services/recipes.service';
+import { Recipe } from 'src/app/shared/recipe.model';
 
 @Component({
   selector: 'app-recipe-item',
@@ -6,7 +8,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent {
-  @Input() name: string;
-  @Input() description: string;
-  @Input('img') imagePath: string;
+  @Input() recipe: Recipe;
+
+  constructor(private recipesService: RecipesService) {}
+
+  onClick() {
+    this.recipesService.currentRecipe.emit(this.recipe);
+  }
 }

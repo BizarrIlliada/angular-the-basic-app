@@ -11,10 +11,7 @@
   <ul>
     <app-recipe-item
       *ngFor="let recipe of recipes; let i = index;"
-      [name]="recipe.name"
-      [description]="recipe.description"
-      [img]="recipe.imagePath"
-      (click)="setCurrentRecipe(i)"
+      [recipe]="recipe"
     ></app-recipe-item>
   </ul>
 </div>
