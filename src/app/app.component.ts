@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentTab = 'recipes';
-  // currentTab = 'shoppingList';
+  // currentTab = 'recipes';
+  currentTab = 'shoppingList';
 
   onTabChange(tabName: 'recipes' | 'shoppingList') {
     this.currentTab = tabName;

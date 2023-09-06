@@ -1,9 +1,6 @@
 <div class="row container">
   <div class="col-xs-10">
-    <app-shopping-list-edit
-      (newIngredient)="onAddIngredient($event)"
-      (deleteIngredients)="ingredients.length = 0"
-    />
+    <app-shopping-list-edit />
     <hr>
     <ul class="list-gropu">
       <li *ngFor="let ingredient of ingredients" href="" class="list-group-item">
