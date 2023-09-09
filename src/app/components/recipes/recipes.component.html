@@ -1,13 +1,5 @@
 <app-container>
   <app-recipe-list />
-  <app-recipe-details
-    *ngIf="currentRecipe; else messageText"
-    [name]="currentRecipe.name"
-    [description]="currentRecipe.description"
-    [imageUrl]="currentRecipe.imagePath"
-    [ingredients]="currentRecipe.ingredients"
-  />
-  <ng-template #messageText>
-    <p>No recipe selected.</p>
-  </ng-template>
+  <router-outlet></router-outlet>
+  <!-- <p *ngIf="true">No recipe selected.</p> -->
 </app-container>

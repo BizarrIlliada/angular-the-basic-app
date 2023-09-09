@@ -54,6 +54,10 @@ export class RecipesService {
     return [...this.recipes];
   }
 
+  getRecipe(name: string) {
+    return this.getRecipes().find((recipe: Recipe) => recipe.name === name);
+  }
+
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.shoppingListService.addIngredients(ingredients);
   };

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,15 +6,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  @Output('selectedTab') selectedTab = new EventEmitter<string>()
-  
   collapsed = true;
-
-  onSelect(tabName) {
-    this.selectedTab.emit(tabName)
-  }
-  
-  goToShoppingList(tabName) {
-    this.selectedTab.emit(tabName)
-  }
 }

@@ -1,9 +1,5 @@
-<app-header
-  (selectedTab)="onTabChange($event)"
-/>
+<app-header />
 <app-main>
-  <app-recipes *ngIf="currentTab === 'recipes'"></app-recipes>
-
-  <app-shopping-list *ngIf="currentTab === 'shoppingList'" />
+  <router-outlet></router-outlet>
 </app-main>
 <app-footer />
