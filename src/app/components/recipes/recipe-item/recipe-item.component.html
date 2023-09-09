@@ -1,7 +1,7 @@
-<li (click)="onClick()" class="pointer">
+<li class="pointer">
   <div class="row">
     <div class="col-xs-12">
-      <a class="list-group-item clearfix">
+      <a [routerLink]="[recipe.name]" routerLinkActive="active" class="list-group-item clearfix">
         <div class="pull-left">
           <h4 class="list-group-item-heading">
             {{ recipe.name }}
@@ -11,7 +11,12 @@
           </p>
         </div>
         <span class="pull-right">
-          <img [src]="recipe.imagePath" [alt]="recipe.name" style="max-height: 50px;" class="img-responsive">
+          <img
+            [src]="recipe.imagePath"
+            [alt]="recipe.name"
+            style="max-height: 50px;"
+            class="img-responsive"
+          >
         </span>
       </a>
     </div>

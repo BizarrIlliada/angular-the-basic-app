@@ -19,6 +19,8 @@ import { RecipesComponent } from './components/recipes/recipes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeResolver } from './components/recipes/recipe-resolver.service';
 import { RecipesService } from './services/recipes.service';
+import { InfoCardComponent } from './components/UI/info-card/info-card.component';
+import { RecipeEditComponent } from './components/resipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { RecipesService } from './services/recipes.service';
     ContainerComponent,
     RecipesComponent,
     DropdownDirective,
+    InfoCardComponent,
+    RecipeEditComponent,
   ],
   imports: [
     FormsModule,

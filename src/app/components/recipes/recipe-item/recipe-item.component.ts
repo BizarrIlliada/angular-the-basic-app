@@ -11,14 +11,14 @@ import { Recipe } from 'src/app/shared/recipe.model';
 export class RecipeItemComponent {
   @Input() recipe: Recipe;
 
-  constructor(
-    // private recipesService: RecipesService,
-    private router: Router,
-    private route: ActivatedRoute
-  ) {}
+  // constructor(
+  //   // private recipesService: RecipesService,
+  //   private router: Router,
+  //   private route: ActivatedRoute
+  // ) {}
 
-  onClick() {
-    // this.recipesService.currentRecipe.emit(this.recipe);
-    this.router.navigate([this.recipe.name], { relativeTo: this.route})
-  }
+  // onClick() {
+  //   // this.recipesService.currentRecipe.emit(this.recipe);
+  //   this.router.navigate([this.recipe.name], { relativeTo: this.route})
+  // }
 }
