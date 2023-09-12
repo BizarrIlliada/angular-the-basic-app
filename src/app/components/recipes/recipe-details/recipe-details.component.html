@@ -19,7 +19,7 @@
         <ul class="dropdown-menu">
           <li>
             <a (click)="onAddToShoppingList()" class="pointer">To Shopping list</a>
-            <a class="pointer">Edit recipe</a>
+            <a [routerLink]="['edit']" class="pointer">Edit recipe</a>
             <a class="pointer">Delete recipe</a>
           </li>
         </ul>

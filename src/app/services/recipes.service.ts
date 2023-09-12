@@ -46,16 +46,24 @@ export class RecipesService {
     ),
   ];
   
-  currentRecipe = new EventEmitter<Recipe>();
+  // currentRecipe = new EventEmitter<Recipe>();
 
   constructor(private shoppingListService: ShoppingListService) {};
 
   getRecipes() {
     return [...this.recipes];
-  }
+  };
 
   getRecipe(name: string) {
     return this.getRecipes().find((recipe: Recipe) => recipe.name === name);
+  };
+
+  deleteRecipe(name: string) {
+    const index = this.getRecipes().findIndex((recipe: Recipe) => recipe.name === name);
+
+    this.recipes.splice(index, 1);
+    console.log(this.recipes);
+    
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {

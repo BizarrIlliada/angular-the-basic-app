@@ -21,6 +21,10 @@ export class RecipeDetailsComponent implements OnInit {
     this.recipesService.addIngredientsToShoppingList(this.recipe.ingredients);
   }
 
+  // onDelete() {
+  //   this.recipesService.deleteRecipe(this.route.snapshot.params['recipe-name']);
+  // }
+
   ngOnInit(): void {
     this.route.data.subscribe((data: Data) => {
       this.recipe = data.recipe;

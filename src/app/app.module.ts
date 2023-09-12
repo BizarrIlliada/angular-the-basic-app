@@ -20,7 +20,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeResolver } from './components/recipes/recipe-resolver.service';
 import { RecipesService } from './services/recipes.service';
 import { InfoCardComponent } from './components/UI/info-card/info-card.component';
-import { RecipeEditComponent } from './components/resipes/recipe-edit/recipe-edit.component';
+import { RecipeEditComponent } from './components/recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
