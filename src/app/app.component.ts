@@ -6,11 +6,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-  // currentTab = 'recipes';
-  currentTab = 'shoppingList';
-
-  onTabChange(tabName: 'recipes' | 'shoppingList') {
-    this.currentTab = tabName;
-  }
-}
+export class AppComponent {}

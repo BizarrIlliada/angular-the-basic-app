@@ -45,7 +45,7 @@ export class RecipesService {
       [],
     ),
   ];
-  
+
   // currentRecipe = new EventEmitter<Recipe>();
 
   constructor(private shoppingListService: ShoppingListService) {};
